@@ -1,0 +1,114 @@
+/* Reset de base pour une compatibilité optimale entre navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de base */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7; /* Fond clair */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Empêche les barres de défilement */
+}
+
+/* Conteneur principal */
+.container {
+    text-align: center;
+    background-color: white; /* Fond blanc pour l'élément principal */
+    padding: 40px 30px;
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet flottant */
+    width: 100%;
+    max-width: 400px; /* Largeur max pour les petits écrans */
+    margin: 0 20px;
+}
+
+/* Titre */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Description */
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des liens */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Style des liens */
+.link {
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol des liens */
+.link:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Léger effet de soulèvement */
+}
+
+/* Footer */
+footer {
+    margin-top: 15px; /* Espacement entre les liens et le footer */
+    font-size: 0.9rem; /* Taille de police plus petite */
+    color: #888; /* Gris clair pour le texte */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Texte du footer */
+footer p {
+    margin: 10px;
+}
+
+/* Mettre en valeur le nom du créateur */
+footer strong {
+    color: #007bff; /* Couleur bleue pour le nom */
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .link {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+}
