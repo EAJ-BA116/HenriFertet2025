@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>lettre parents</h1>
+    <p>texte</p>
+    <p>audio</p>
+       <!-- Footer -->
+       <footer>
+        <p>Projet réalisé par <strong>EAJ BA 116&nbsp;</strong>- 2025</p>
+        <a href="index.html" class="footer-btn">Retour à l'accueil</a>
+    </footer>
+</body>
+<script>
+ // Appliquer le fade-in au chargement
+ window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("fade-in");
+    });
+
+    // Ajouter effet fade-out sur les liens internes
+    const links = document.querySelectorAll("a[href]");
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+
+            // Ignore les liens externes ou ancrages
+            if (!href.startsWith("http") && !href.startsWith("#")) {
+                e.preventDefault();
+                document.body.classList.remove("fade-in");
+                document.body.classList.add("fade-out");
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 400); // délai identique à la durée de l'animation CSS
+            }
+        });
+    });
+</script>
+
+</html>

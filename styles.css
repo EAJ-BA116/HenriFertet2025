@@ -5,28 +5,55 @@
     box-sizing: border-box;
 }
 
-/* Style de base */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #f7f7f7; /* Fond clair */
+    background: linear-gradient(135deg, #dbefff, #f2f7ff);
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Empêche les barres de défilement */
+    flex-direction: column;
 }
 
-/* Conteneur principal */
+
+/* Zone principale */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Conteneur principal qui grandit pour pousser le footer en bas */
 .container {
     text-align: center;
-    background-color: white; /* Fond blanc pour l'élément principal */
-    padding: 40px 30px;
-    border-radius: 15px; /* Coins arrondis */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet flottant */
+    background: rgba(127, 128, 159, 0.383); /* semi-transparent */
+    backdrop-filter: blur(12px); /* flou d’arrière-plan */
+    -webkit-backdrop-filter: blur(12px); /* compatibilité Safari */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Largeur max pour les petits écrans */
-    margin: 0 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    animation: fadeInUp 0.6s ease-out;
 }
+
+
+/* Animation d’apparition */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 /* Titre */
 h1 {
@@ -68,24 +95,45 @@ h1 {
     transform: translateY(-3px); /* Léger effet de soulèvement */
 }
 
-/* Footer */
 footer {
-    margin-top: 15px; /* Espacement entre les liens et le footer */
-    font-size: 0.9rem; /* Taille de police plus petite */
-    color: #888; /* Gris clair pour le texte */
-    text-align: center; /* Centrer le texte */
+    margin-top: auto;
+    padding: 20px 15px;
+    font-size: 0.9rem;
+    color: #333;
+    background: rgba(156, 164, 210, 0.322); /* fond semi-transparent */
+    backdrop-filter: blur(10px); /* flou léger */
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 15px 15px;
+    text-align: center;
 }
 
-/* Texte du footer */
-footer p {
-    margin: 10px;
-}
 
-/* Mettre en valeur le nom du créateur */
 footer strong {
-    color: #007bff; /* Couleur bleue pour le nom */
+    color: #0056b3;
     font-weight: 600;
 }
+
+.footer-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 22px;
+    background-color: rgba(0, 123, 255, 0.85);
+    color: white;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: none;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-btn:hover {
+    background-color: rgba(0, 86, 179, 0.9);
+    transform: translateY(-2px);
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -112,3 +160,20 @@ footer strong {
         padding: 12px 20px;
     }
 }
+
+/* Animation de fondu général */
+body {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Appliquer le fondu entrant */
+body.fade-in {
+    opacity: 1;
+}
+
+/* Fondu sortant quand on change de page */
+body.fade-out {
+    opacity: 0;
+}
+
