@@ -1,44 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lettre d'Henri Fertet</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+   
+  </style>
 </head>
-<body>
-    <h1>lettre parents</h1>
-    <p>texte</p>
-    <p>audio</p>
-       <!-- Footer -->
-       <footer>
-        <p>Projet réalisé par <strong>EAJ BA 116&nbsp;</strong>- 2025</p>
-        <a href="index.html" class="footer-btn">Retour à l'accueil</a>
-    </footer>
-</body>
-<script>
- // Appliquer le fade-in au chargement
- window.addEventListener("DOMContentLoaded", () => {
-        document.body.classList.add("fade-in");
+<body class="fade-in">
+
+  <h1><br>HENRI FERTET</h1>
+  <h2>Élève de Seconde du Lycée Victor-Hugo à Besançon</h2>
+  <p style="text-align:center;"><br><strong>Lettre d'adieu à ses parents juste avant son exécution.<br> Il avait 16 ans.<br><br>
+ </p>
+
+  <div class="photo-container">
+    <img src="images/lettre1.jpg" alt="Henri Fertet" onclick="openLightbox(this.src)">
+    <img src="images/lettre2.jpg" alt="Henri Fertet" onclick="openLightbox(this.src)">
+    <img src="images/lettre3.jpg" alt="Henri Fertet" onclick="openLightbox(this.src)">
+    <img src="images/lettre4.jpg" alt="Henri Fertet" onclick="openLightbox(this.src)">
+  </div>
+
+  <div class="audio-player">
+    <audio controls>
+      <source src="audio/fertet.mp3" type="audio/mpeg">
+      Votre navigateur ne supporte pas l’audio HTML5.
+    </audio>
+    <p><br><em>Écouter la lettre lue par les EAJ</em></p>
+  </div>
+
+  <blockquote>
+    <p>Chers Parents,</p>
+    <p>Ma lettre va vous causer une grande peine, mais je vous ai vus si pleins de courage que, je n'en doute pas, vous voudrez encore le garder, ne serait-ce que par amour pour moi.</p>
+    <p>Vous ne pouvez savoir ce que moralement j'ai souffert dans ma cellule, ce que j'ai souffert de ne plus vous voir, de ne plus sentir peser sur moi votre tendre sollicitude que de loin. Pendant ces 87 jours de cellule, votre amour m'a manqué plus que vos colis, et souvent je vous ai demandé de me pardonner le mal que je vous ai fait, tout le mal que je vous ai fait.</p>
+    <p>Vous ne pouvez vous douter de ce que je vous aime aujourd'hui car, avant, je vous aimais plutôt par routine, mais maintenant je comprends tout ce que vous avez fait pour moi et je crois être arrivé à l'amour filial véritable, au vrai amour filial. Peut-être après la guerre, un camarade vous parlera-t-il de moi, de cet amour que je lui ai communiqué. J'espère qu'il ne faillira pas à cette mission sacrée.</p>
+    <p>Remerciez toutes les personnes qui se sont intéressées à moi, et particulièrement nos plus proches parents et amis ; dites-leur ma confiance en la France éternelle. Embrassez très fort mes grands-parents, mes oncles tantes et cousins, Henriette. Donnez une bonne poignée de main chez M. Duvernet ; dites un petit mot à chacun. Dites à M. le Curé que je pense aussi particulièrement à lui et aux siens. Je remercie Monseigneur du grand honneur qu'il m'a fait, honneur dont, je crois, je me suis montré digne. Je salue aussi en tombant, mes camarades de lycée. A ce propos, Hennemann me doit un paquet de cigarettes, Jacquin mon livre sur les hommes préhistoriques. Rendez "Le Comte de Monte-Cristo" à Emourgeon, 3 chemin Français, derrière la gare. Donnez à Maurice André, de la Maltournée, 40 grammes de tabac que je lui dois.</p>
+    <p>Je lègue ma petite bibliothèque à Pierre, mes livres de classe à mon petit papa, mes collections à ma chère petite maman, mais qu'elle se méfie de la hache préhistorique et du fourreau d'épée gaulois.</p>
+    <p>Je meurs pour ma Patrie. Je veux une France libre et des Français heureux. Non pas une France orgueilleuse, première nation du monde, mais une France travailleuse, laborieuse et honnête. Que les Français soient heureux, voilà l'essentiel. Dans la vie, il faut savoir cueillir le bonheur.</p>
+    <p>Pour moi, ne vous faites pas de soucis. Je garde mon courage et ma belle humeur jusqu'au bout, et je chanterai "Sambre et Meuse" parce que c'est toi, ma chère petite maman, qui me l'as apprise.</p>
+    <p>Avec Pierre, soyez sévères et tendres. Vérifiez son travail et forcez-le à travailler. N'admettez pas de négligence. Il doit se montrer digne de moi. Sur trois enfants, il en reste un. Il doit réussir.</p>
+    <p>Les soldats viennent me chercher. Je hâte le pas. Mon écriture est peut-être tremblée ; mais c'est parce que j'ai un petit crayon. Je n'ai pas peur de la mort ; j'ai la conscience tellement tranquille.</p>
+    <p>Papa, je t'en supplie, prie. Songe que, si je meurs, c'est pour mon bien. Quelle mort sera plus honorable pour moi que celle-là ? Je meurs volontairement pour ma Patrie. Nous nous retrouverons tous les quatre, bientôt au Ciel.<br> "Qu'est-ce que cent ans ?"</p>
+    <p>Maman, rappelle-toi :<br> "Et ces vengeurs auront de nouveaux défenseurs<br> qui, après leur mort, auront des successeurs."</p>
+    <p>Adieu, la mort m'appelle. Je ne veux ni bandeau, ni être attaché. Je vous embrasse tous. C'est dur quand même de mourir.</p>
+    <p>Mille baisers. Vive la France.</p>
+    <p class="signature">Un condamné à mort de 16 ans – H. Fertet</p>
+    <p><em>Excusez les fautes d'orthographe, pas le temps de relire.</em></p>
+  </blockquote>
+
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <footer>
+    <img src="images/ba116.png" alt="Décor gauche" class="img-gauche">
+    <p>Projet réalisé par <strong>EAJ BA 116</strong> - 2025</p>
+    <a href="index.html" class="footer-btn">Retour à l'accueil</a>
+    <img src="images/eaj.png" alt="Décor droite" class="img-droite">
+  </footer>
+
+  <script>
+    function openLightbox(src) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      lightbox.style.display = 'flex';
+    }
+
+    // Animation fade-in
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("fade-in");
     });
 
-    // Ajouter effet fade-out sur les liens internes
+    // Animation fade-out sur les liens
     const links = document.querySelectorAll("a[href]");
     links.forEach(link => {
-        link.addEventListener("click", function (e) {
-            const href = this.getAttribute("href");
-
-            // Ignore les liens externes ou ancrages
-            if (!href.startsWith("http") && !href.startsWith("#")) {
-                e.preventDefault();
-                document.body.classList.remove("fade-in");
-                document.body.classList.add("fade-out");
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 400); // délai identique à la durée de l'animation CSS
-            }
-        });
+      link.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+        if (!href.startsWith("http") && !href.startsWith("#")) {
+          e.preventDefault();
+          document.body.classList.remove("fade-in");
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location.href = href;
+          }, 400);
+        }
+      });
     });
-</script>
+  </script>
 
+</body>
 </html>

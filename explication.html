@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Henri Fertet</h1>
+    <h1>HENRI FERTET</h1>
+  <h2>Élève de Seconde du Lycée Victor-Hugo à Besançon</h2>
+  <p style="text-align:center;"><br><strong>Résistant condamné à mort</strong> par le tribunal militaire de la Feldkommandantur 560.<br><br>
+  Exécuté à Besançon le 26 septembre 1943.</p>
+
+  <div class="photo-container">
+    <img src="images/henri.jpg" alt="Henri Fertet" onclick="openLightbox(this.src)">
+  </div>
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="">
+  </div>
      <!-- Footer -->
      <footer>
-        <p>Projet réalisé par <strong>EAJ BA 116&nbsp;</strong>- 2025</p>
+        <img src="images/ba116.png" alt="Décor gauche" class="img-gauche">
+        <p>Projet réalisé par <strong>EAJ BA 116</strong> - 2025</p>
         <a href="index.html" class="footer-btn">Retour à l'accueil</a>
-    </footer>
+        <img src="images/eaj.png" alt="Décor droite" class="img-droite">
+      </footer>
+    
 </body>
 <script>
+     function openLightbox(src) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      lightbox.style.display = 'flex';
+    }
+
+    // Animation fade-in
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("fade-in");
+    });
+
+    
  // Appliquer le fade-in au chargement
  window.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("fade-in");
