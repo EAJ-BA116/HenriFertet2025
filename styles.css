@@ -205,18 +205,18 @@ footer {
   .img-droite {
     position: fixed;
     bottom: 20px;
-    width: 75px; /* ajuste selon la taille de tes images */
+    width: 70px; /* ajuste selon la taille de tes images */
     z-index: 999;
   }
   
   .img-gauche {
-    left: 30px;
+    left: 15px;
     
   }
   
   .img-droite {
-    right: 30px;
-    width: 110px; /* ajuste selon la taille de tes images */
+    right: 15px;
+    width: 80px; /* ajuste selon la taille de tes images */
   }
   
 
