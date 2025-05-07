@@ -210,12 +210,12 @@ footer {
   }
   
   .img-gauche {
-    left: 50px;
+    left: 30px;
     
   }
   
   .img-droite {
-    right: 50px;
+    right: 30px;
     width: 110px; /* ajuste selon la taille de tes images */
   }
   
