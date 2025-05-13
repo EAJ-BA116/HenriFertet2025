@@ -8,48 +8,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header  style="font-size: 1.5em;">
+        
+        <h2> <strong>Henri Fertet</strong></h2>
+        
+  </header>
     <div class="container">
-        <h1>Henri Fertet</h1>
-        <p class="description">Explorez les ressources ci-dessous</p>
+        <h1>Hommage à <br><BR>HENRI FERTET </h1>
+        <br>
+        
+      
         <div class="links-container">
-            <a href="lettreparent.html" class="link" >Lettre à mes parents</a>
             <a href="explication.html" class="link" >Histoire de Henri Fertet </a>
-            <a href="video.html" class="link" >Vidéo</a>
+            <a href="lettreparent.html" class="link" >Lettre à mes parents</a>
+            <a href="compagnons.html" class="link" >Les compagnons de la libération</a>
             <a href="eaj.html" class="link" >Qui sommes nous?</a>
+            <a href="video.html" class="link" >Notre projet</a>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
+  
+<!-- Footer -->
+    <footer class="accueilfooter">
         <img src="images/ba116.png" alt="Décor gauche" class="img-gauche">
-        <p><strong>EAJ BA 116</strong> - 2025</p>
-        
-        <img src="images/eaj.png" alt="Décor droite" class="img-droite">
+        <p id="acceuilfooterp" style="color: #190303;position: relative;bottom: 200%;"><strong style="color: rgb(255, 255, 255);">EAJ BA 116</strong> - 2025</p>
+                <img src="images/eaj.png" alt="Décor droite" class="img-droite">
       </footer>
+    
 </body>
+
 <script>
   // Appliquer le fade-in au chargement
   window.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("fade-in");
     });
-
-    // Ajouter effet fade-out sur les liens internes
-    const links = document.querySelectorAll("a[href]");
-    links.forEach(link => {
-        link.addEventListener("click", function (e) {
-            const href = this.getAttribute("href");
-
-            // Ignore les liens externes ou ancrages
-            if (!href.startsWith("http") && !href.startsWith("#")) {
-                e.preventDefault();
-                document.body.classList.remove("fade-in");
-                document.body.classList.add("fade-out");
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 400); // délai identique à la durée de l'animation CSS
-            }
-        });
-    });
+  
 </script>
 
 </html>
