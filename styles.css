@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: linear-gradient(135deg, #dbefff, #f2f7ff);
+    background: linear-gradient(135deg, #363636, #4b4848);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,10 +27,10 @@ main {
 /* Conteneur principal qui grandit pour pousser le footer en bas */
 .container {
     text-align: center;
-    background: rgba(127, 128, 159, 0.383); /* semi-transparent */
+    background: rgba(175, 176, 212, 0.383); /* semi-transparent */
     backdrop-filter: blur(12px); /* flou d’arrière-plan */
     -webkit-backdrop-filter: blur(12px); /* compatibilité Safari */
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(213, 199, 199, 0.4);
     padding: 50px 40px;
     border-radius: 20px;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
@@ -46,7 +46,7 @@ main {
 
   .photo-container img {
     max-width: 40%;
-    border: 5px solid #ccc;
+    border: 5px solid #605f66;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     cursor: pointer;
     transition: transform 0.2s;
@@ -84,14 +84,14 @@ h1, h2 {
   h2 {
     font-weight: normal;
     font-style: italic;
-    color: #555;
+    color: #c9b1b1;
     margin-top: 5px;
   }
 
 /* Description */
 .description {
     font-size: 1.2rem;
-    color: #666;
+    color: #270e0e;
     margin-bottom: 30px;
 }
 
@@ -106,7 +106,7 @@ h1, h2 {
 .link {
     text-decoration: none;
     padding: 15px 25px;
-    background-color: #007bff;
+    background-color: rgba(48, 60, 72, 0.85);
     color: white;
     border-radius: 30px;
     font-size: 1rem;
@@ -116,7 +116,7 @@ h1, h2 {
 
 /* Effet au survol des liens */
 .link:hover {
-    background-color: #0056b3;
+    background-color: #1d2731;
     transform: translateY(-3px); /* Léger effet de soulèvement */
 }
 
@@ -140,9 +140,9 @@ footer {
   }
 
   blockquote {
-    background: #fff;
+    background: #d0cccc;
     padding: 30px;
-    border-left: 8px solid #bfa77a;
+    border-left: 8px solid #616671;
     font-style: italic;
     font-size: 1.1em;
     line-height: 1.6;
@@ -165,12 +165,12 @@ footer {
   #lightbox img {
     max-width: 90%;
     max-height: 90%;
-    border: 8px solid #fff;
-    box-shadow: 0 0 20px #000;
+    border: 8px solid #5f5555;
+    box-shadow: 0 0 20px #796565;
   }
 
 footer strong {
-    color: #0056b3;
+    color: #dce4ee;
     font-weight: 600;
 }
 
@@ -178,7 +178,7 @@ footer strong {
     display: inline-block;
     margin-top: 12px;
     padding: 10px 22px;
-    background-color: rgba(0, 123, 255, 0.85);
+    background-color: rgba(48, 60, 72, 0.85);
     color: white;
     border-radius: 30px;
     font-size: 0.95rem;
@@ -189,7 +189,7 @@ footer strong {
 }
 
 .footer-btn:hover {
-    background-color: rgba(0, 86, 179, 0.9);
+    background-color: rgba(30, 39, 48, 0.9);
     transform: translateY(-2px);
 }
 footer {
@@ -197,7 +197,7 @@ footer {
     text-align: center;
     margin-top: 50px;
     font-size: 0.9em;
-    color: #555;
+    color: #c9cbcea2;
     padding: 30px 0;
   }
   
