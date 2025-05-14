@@ -12,9 +12,28 @@
         <h2> <strong>Henri Fertet</strong></h2>
         
   </header>
-    <main>
-        <h1>Compagnons de la libération</h1>
-    </main>
+    <p style="text-align:center;"><strong>Les Compagnons de la Libération</strong> 
+</p>
+
+
+  <div class="photo-container">
+    <img src="images/medaille.png" alt="Medaille des compagnons de la libération" style="width: 30%;" onclick="openLightbox(this.src)">
+  </div>
+ <!-- Bouton principal -->
+<div style="text-align: center;">
+  <button class="btn" onclick="ouvrirPDF()">Les Compagnons de la libération</button>
+</div>
+
+<!-- Lightbox PDF -->
+<div id="pdf-lightbox" class="pdf-lightbox" onclick="fermerPDF(event)">
+  <div class="pdf-content" onclick="event.stopPropagation()">
+    <button class="pdf-close" onclick="fermerPDF(event)">✕</button>
+    <iframe src="pdf/compagnons.pdf" class="pdf-frame"></iframe>
+  </div>
+</div>
+<div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="">
+</div>
 
     <Footer>
       <a href="index.html" class="footer-btn">Retour à l'accueil</a>
@@ -26,12 +45,18 @@
     
 </body>
 <script>
- // Appliquer le fade-in au chargement
- window.addEventListener("DOMContentLoaded", () => {
-        document.body.classList.add("fade-in");
-    });
+  function openLightbox(src) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      lightbox.style.display = 'flex';
+    }
 
-    // Ajouter effet fade-out sur les liens internes
+    // Animation fade-in
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("fade-in");
+    });
+       // Ajouter effet fade-out sur les liens internes
     const links = document.querySelectorAll("a[href]");
     links.forEach(link => {
         link.addEventListener("click", function (e) {
@@ -48,6 +73,24 @@
             }
         });
     });
+  
+    function ouvrirPDF() {
+  const lightbox = document.getElementById("pdf-lightbox");
+  lightbox.classList.remove("fade-out");
+  lightbox.style.display = "flex";
+  document.body.style.overflow = "hidden"; // Empêche scroll fond
+}
+
+function fermerPDF(event) {
+  const lightbox = document.getElementById("pdf-lightbox");
+  lightbox.classList.add("fade-out");
+  setTimeout(() => {
+    lightbox.style.display = "none";
+    lightbox.classList.remove("fade-out");
+    document.body.style.overflow = ""; // Réactive scroll
+  }, 400);
+  event.stopPropagation();
+}
 </script>
 
 </html>
