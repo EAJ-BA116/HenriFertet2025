@@ -21,6 +21,23 @@
   <div class="photo-container">
     <img src="images/henri.jpg" alt="Henri Fertet" onclick="openLightbox(this.src)">
   </div>
+
+<!-- Bouton principal -->
+<div style="text-align: center;">
+  <button class="btn" onclick="ouvrirPDF()">Histoire d'Henri Fertet</button>
+</div>
+
+<!-- Lightbox PDF -->
+<div id="pdf-lightbox" class="pdf-lightbox" onclick="fermerPDF(event)">
+  <div class="pdf-content" onclick="event.stopPropagation()">
+    <button class="pdf-close" onclick="fermerPDF(event)">✕</button>
+    <iframe src="pdf/henrifertet.pdf" class="pdf-frame"></iframe>
+  </div>
+</div>
+
+
+
+
   <div id="lightbox" onclick="this.style.display='none'">
     <img id="lightbox-img" src="">
   </div>
@@ -62,6 +79,25 @@
             }
         });
     });
+
+function ouvrirPDF() {
+  const lightbox = document.getElementById("pdf-lightbox");
+  lightbox.classList.remove("fade-out");
+  lightbox.style.display = "flex";
+  document.body.style.overflow = "hidden"; // Empêche scroll fond
+}
+
+function fermerPDF(event) {
+  const lightbox = document.getElementById("pdf-lightbox");
+  lightbox.classList.add("fade-out");
+  setTimeout(() => {
+    lightbox.style.display = "none";
+    lightbox.classList.remove("fade-out");
+    document.body.style.overflow = ""; // Réactive scroll
+  }, 400);
+  event.stopPropagation();
+}
+
 
 
     
