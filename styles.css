@@ -177,14 +177,14 @@ header {
   
     border-left: 8px solid #5c470f;
     color: #000000;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.6;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   }
 
   blockquote p {
 color: #3f3f40;
-font-family: Snell Roundhand, cursive;
+font-family: "Satisfy", cursive;
 
 text-justify: none;
   }
@@ -409,4 +409,5 @@ height: 75px;
 .pdf-close:hover {
     background-color: rgba(68, 84, 99, 1);
 }
+
 
