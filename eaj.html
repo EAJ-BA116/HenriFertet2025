@@ -13,7 +13,20 @@
         
   </header>
     <main>
-        <h1>Qui sommes-nous?</h1>
+        <h1>Les Escadrilles Air Jeunesse (EAJ)</h1>
+        <p>Les EAJ proposent aux jeunes de 12 à 25 ans un parcours aéronautique et sportif au sein de l’Armée de l’Air et de l’Espace. Sans être des unités militaires, les EAJ transmettent la culture aéronautique, l’histoire, les traditions et les valeurs des aviateurs, tout en développant l’esprit d’équipe, le leadership et la responsabilité. Créées en 2019, elles rassemblent dans un groupe dynamique et porteur, des valeurs de l’Armée de l’Air et de l’Espace. </p>
+        <h1>Les EAJ de la BA116</h1> 
+         <div class="photo-container">
+    <img src="images/eaj2.png" alt="Photo" style="width: 30%;" onclick="openLightbox(this.src)">
+  </div>
+        <p>Le dispositif des EAJ, sur la BA116 de Luxeuil les Bains, propose aux équipiers de 1ère année de préparer et présenter le diplôme du Brevet d’Initiation Aéronautique (BIA). Les équipiers de 2ème année, quant à eux, s’investissent dans le projet du Prix spécial du Jury qui vient récompenser une des Escadrilles sur la base d’un travail collectif. Cette année (2025), le sujet est « Les Compagnons de la Libération »  <br>
+    <br>   <br>
+    <br>  
+    <br></p>
+ <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="">
+</div>
+    
     </main>
 
         <Footer>
@@ -26,12 +39,18 @@
     
 </body>
 <script>
- // Appliquer le fade-in au chargement
- window.addEventListener("DOMContentLoaded", () => {
-        document.body.classList.add("fade-in");
-    });
+    function openLightbox(src) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      lightbox.style.display = 'flex';
+    }
 
-    // Ajouter effet fade-out sur les liens internes
+    // Animation fade-in
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("fade-in");
+    });
+       // Ajouter effet fade-out sur les liens internes
     const links = document.querySelectorAll("a[href]");
     links.forEach(link => {
         link.addEventListener("click", function (e) {

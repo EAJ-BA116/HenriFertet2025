@@ -44,11 +44,12 @@
         
   </header>
     <main>
+          <h1>Prix Spécial du Jury</h1>
+          <p>Réalisation d'une plaque commémorative sur le thème des "Compagnons de la Libération"</p>
         <div class="video-container">
             <video id="myVideo" src="video.mp4" controls style="display: none;"></video>
             <button class="btn" onclick="playVideo()">Lancer la vidéo</button>
-            <button class="btn" onclick="goFullScreen()">Plein écran</button>
-        </div>
+                    </div>
     </main>
 
       <Footer>
@@ -67,16 +68,7 @@
             video.play();
         }
 
-        function goFullScreen() {
-            const video = document.getElementById('myVideo');
-            if (video.requestFullscreen) {
-                video.requestFullscreen();
-            } else if (video.webkitRequestFullscreen) {
-                video.webkitRequestFullscreen();
-            } else if (video.msRequestFullscreen) {
-                video.msRequestFullscreen();
-            }
-        }
+        
  // Appliquer le fade-in au chargement
  window.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("fade-in");
