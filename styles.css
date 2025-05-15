@@ -48,7 +48,7 @@ main {
   }
 
   .photo-container img {
-    max-width: 40%;
+    max-width: 80%;
     border: 5px solid #605f66;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     cursor: pointer;
