@@ -1,20 +1,21 @@
-/* Reset de base pour une compatibilité optimale entre navigateurs */
+ /* Reset de base pour une compatibilité optimale entre navigateurs */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Style global élégant et moderne */
+        body {          
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(180deg, #22316d, #0c131c);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+         
+        }
 
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: linear-gradient(135deg, #363636, #4b4848);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* Zone principale */
+        /* Zone principale */
 main {
     flex: 1;
     display: flex;
@@ -23,98 +24,64 @@ main {
     align-items: center;
     padding: 20px;
 }
-
 /* Conteneur principal qui grandit pour pousser le footer en bas */
 .container {
     text-align: center;
     position: relative;
     
-    background: rgba(175, 176, 212, 0.383); /* semi-transparent */
+    background: rgba(114, 114, 174, 0.509); /* semi-transparent */
     backdrop-filter: blur(12px); /* flou d’arrière-plan */
     -webkit-backdrop-filter: blur(12px); /* compatibilité Safari */
-    border: 1px solid rgba(213, 199, 199, 0.4);
+    border: 1px solid rgba(15, 127, 106, 0.4);
     padding: 30px 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(102, 252, 241, 0.4);
     width: 90%;
-    color: #e5e5e5;
-    
-    margin: 50px auto;
+    color: #7a1717;
+        margin: 50px auto;
     animation: fadeInUp 0.6s ease-out;
 }
-.photo-container {
+
+        h1 {
+            margin-top: 30px;
+            font-size: 2em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #66fcf1;
+            text-shadow: 0 0 10px #45a29e;
+        }
+
+       
+        h2 {
+            margin-top: 20px;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            text-align: center;
+          
+        }
+footer {
+    position: fixed;
+    margin-top: auto;
     text-align: center;
-    margin: 30px 0;
-  }
-
-  .photo-container img {
-    max-width: 80%;
-    border: 5px solid #605f66;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-
-  .photo-container img:hover {
-    transform: scale(1.02);
-  }
-
-
-/* Animation d’apparition */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-/* Titre */
-h1, h2, h3 {
+    padding: 30px 0;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    color:  #66fcf1;
+    background: rgba(102, 252, 241, 0.4); /* fond semi-transparent */
+    backdrop-filter: blur(10px); /* flou léger */
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 0.5px solid  #176d67;;
+    box-shadow: 0 -3px 20px  #66fcf1;;
+    border-radius: 0 0 15px 15px;
     text-align: center;
-  }
-
-  h1 {
-    font-size: 3em;
-    margin-bottom: 0;
-    color: #c3c3c5;
-    padding: 15px 25px;
-  }
-
-  h2 {
-    font-weight: normal;
-    font-style: italic;
-    color: #c3c3c5;
-    margin-top: 5px;
-    padding: 15px 25px;
-  }
- h3 {
-    font-weight: 2em;
-    font-style:normal;
-    color: #c3c3c5;
-    margin-top: 5px;
-    padding: 15px 25px;
-  }
-
-  p{
-text-align: center;
-    color: #aaaab2;
-    margin-top: 5px;
-    padding: 20px 25px;
-  }
-
-/* Description */
-.description {
-    font-size: 1.2rem;
-    color: #dbdbdb;
-    margin-bottom: 30px;
+    width: 100%;
+  bottom: 0px;
+  height: 75px;
 }
+               
 
+    
 /* Conteneur des liens */
 .links-container {
   
@@ -122,12 +89,11 @@ text-align: center;
     flex-direction: column;
     gap: 10px;
 }
-
 /* Style des liens */
 .link {
     text-decoration: none;
     padding: 15px 25px;
-    background-color: rgba(48, 60, 72, 0.85);
+    background-color: rgba(24, 129, 129, 0.881);
     color: white;
     border-radius: 30px;
     font-size: 1rem;
@@ -137,40 +103,19 @@ text-align: center;
 
 /* Effet au survol des liens */
 .link:hover {
-    background-color: #1d2731;
+    background-color: #0e3034;
     transform: translateY(-3px); /* Léger effet de soulèvement */
 }
-
-footer {
-    position: fixed;
-    margin-top: auto;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 0.9rem;
-    margin-top: 50px;
-    color: #333;
-    background: rgba(156, 164, 210, 0.322); /* fond semi-transparent */
-    backdrop-filter: blur(10px); /* flou léger */
-    -webkit-backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 0 0 15px 15px;
-    text-align: center;
-    width: 100%;
-  bottom: 0px;
-  height: 75px;
-}
-
 header {
      padding: 10px 0;
     font-size: 1.2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    color: #333333;
     background: rgba(156, 164, 210, 0.322); /* fond semi-transparent */
     backdrop-filter: blur(10px); /* flou léger */
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -3px 20px rgba(111, 90, 90, 0.05);
     border-radius: 0 0 15px 15px;
     text-align: center;
 }
@@ -180,7 +125,7 @@ header {
   }
 
   blockquote {
-    background: rgba(239, 226, 207, 0.979);
+    background: rgba(201, 193, 180, 0.979);
   
     border-left: 8px solid #5c470f;
     color: #000000;
@@ -209,14 +154,14 @@ text-justify: none;
   }
 
   #lightbox img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 200%;
+    max-height: 200%;
     border: 8px solid #605f66;
     box-shadow: 0 0 20px #3430307d;
   }
 
 footer strong {
-    color: #dce4ee;
+    color: #1a2f48;
     font-weight: 600;
 }
 
@@ -225,7 +170,7 @@ footer strong {
     
     padding: 10px 22px;
     height: 10%;
-    background-color: rgba(48, 60, 72, 0.85);
+    background-color: rgba(157, 189, 219, 0.85);
     color: white;
     border-radius: 30px;
     font-size: 0.8rem;
@@ -262,140 +207,58 @@ footer strong {
     right: 15px;
     width: 80px; /* ajuste selon la taille de tes images */
   }
-  
-  
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.6rem;
-    }
 
-    .link {
-        font-size: 1rem;
-    }
-}
+        /* Adaptation mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.4rem;
-    }
-
-    .description {
-        font-size: 1rem;
-    }
-
-    .link {
-        font-size: 0.9rem;
-        padding: 12px 20px;
-    }
-}
-
-/* Animation de fondu général */
-body {
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-/* Appliquer le fondu entrant */
-body.fade-in {
-    opacity: 1;
-}
-
-/* Fondu sortant quand on change de page */
-body.fade-out {
-    opacity: 0;
-}
-
+            .logos img {
+                height: 40px;
+                
+            }
+              .video-frame { width: 96vw; border-radius: 16px; }
+        }
 .accueilfooter{
   position: fixed;
 width: 100%;
 bottom: 0px;
 height: 75px;
 }
-
-
-.pdf-lightbox {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 0.4s ease-in-out;
+ /* ——— Vidéo responsive ——— */
+.video-frame {
+  width: min(92vw, 1100px);      /* s’adapte à l’écran, borné à 1100px */
+  aspect-ratio: 16 / 9;          /* garde un ratio propre */
+  background: #000;              /* barres noires si besoin */
+  border-radius: clamp(12px, 2vw, 25px);
   overflow: hidden;
+  box-shadow: 0 0 25px rgba(102, 252, 241, 0.4);
+  margin: 20px auto;
 }
 
-.pdf-content {
-  position: relative;
-  background: white;
-  width: 90vw;
-  height: 80vh;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  animation: fadeIn 0.4s ease-in-out;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-.pdf-frame {
-  flex: 1;
+.video-frame > video {
   width: 100%;
-  border: none;
-  border-radius: 0 0 8px 8px;
+  height: 100%;
+  display: block;
+  object-fit: contain;           /* évite la coupe ; utilise cover si tu veux recadrer */
 }
 
-.pdf-close {
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  font-size: 1.8em;
-  background: none;
-  border: none;
-  color: #333;
-  z-index: 1;
-  cursor: pointer;
+/* Centre le contenu et évite que le footer fixe ne chevauche la vidéo */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(12px, 2.5vw, 32px);
+  padding-bottom: 110px;         /* >= hauteur du footer (75px) + marge */
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+/* Mobile : un peu plus large et bords plus doux */
+@media (max-width: 600px) {
+  .video-frame { width: 96vw; border-radius: 16px; }
 }
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to   { opacity: 0; }
-}
-
-.fade-out {
-  animation: fadeOut 0.4s ease-in-out forwards;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    border-radius: 25px;
-    background-color: rgba(61, 73, 86, 0.85);
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    max-width: 90vw;
-    margin: 1rem auto;
-}
-
-.btn:hover {
-    background-color: rgba(30, 39, 48, 0.9);
-    transform: translateY(-3px); /* Léger effet de soulèvement */
-}
-
 .pdf-close {
     position: absolute;
     top: 10px;
@@ -419,4 +282,24 @@ height: 75px;
     background-color: rgba(68, 84, 99, 1);
 }
 
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: rgba(61, 73, 86, 0.85);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    max-width: 90vw;
+    margin: 1rem auto;
+}
+
+.btn:hover {
+    background-color: rgba(30, 39, 48, 0.9);
+    transform: translateY(-3px); /* Léger effet de soulèvement */
+}
 

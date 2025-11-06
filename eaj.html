@@ -7,24 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <header  style="font-size: 1.5em;">
-        
-        <h2> <strong>Les Escadrilles Air Jeunesse</strong></h2>
-        
-  </header>
+      <h1>Les Escadrilles Air Jeunesse (EAJ) </h1>      
     <main>
-        <h1>Les Escadrilles Air Jeunesse (EAJ)</h1>
-        <p>Les EAJ proposent aux jeunes de 12 à 25 ans un parcours aéronautique et sportif au sein de l’Armée de l’Air et de l’Espace. Sans être des unités militaires, les EAJ transmettent la culture aéronautique, l’histoire, les traditions et les valeurs des aviateurs, tout en développant l’esprit d’équipe, le leadership et la responsabilité. Créées en 2019, elles rassemblent dans un groupe dynamique et porteur, des valeurs de l’Armée de l’Air et de l’Espace. </p>
-        <h1>Les EAJ de la BA116</h1> 
+         
+        <p>Les EAJ proposent aux jeunes de 12 à 25 ans un parcours aéronautique et sportif au sein de l’Armée de l’Air et de l’Espace. Sans être des unités militaires, les EAJ transmettent la culture aéronautique, l’histoire, les traditions et les valeurs des aviateurs, tout en développant l’esprit d’équipe, le leadership et la responsabilité. Créées en 2019, elles rassemblent dans un groupe dynamique et porteur, des valeurs de l’Armée de l’Air et de l’Espace. </p><p><br></p>
+        <h1>Les EAJ de 2eme année de la BA116</h1> 
+        <p><br></p>
          <div class="photo-container">
-    <img src="images/eaj2.jpg" alt="Photo" style="width: 200%; filter: saturate(59%) brightness(100%);" onclick="openLightbox(this.src)">
+    <img src="images/eaj2.jpg" alt="Photo des EAJ 2eme année" style="width: 100%; filter: saturate(100%) brightness(100%);">
   </div>
-        <p>Le dispositif des EAJ, sur la BA116 de Luxeuil les Bains, propose aux équipiers de 1ère année de préparer et présenter le diplôme du Brevet d’Initiation Aéronautique (BIA). Les équipiers de 2ème année, quant à eux, s’investissent dans le projet du Prix spécial du Jury qui vient récompenser une des Escadrilles sur la base d’un travail collectif. Cette année (2025), le sujet est « Les Compagnons de la Libération »  <br>
+  <p><br></p>
+        <p>Le dispositif des EAJ, sur la BA116 de Luxeuil les Bains, propose aux équipiers de 1ère année de préparer et présenter le diplôme du Brevet d’Initiation Aéronautique (BIA). Les équipiers de 2ème année, quant à eux, s’investissent dans le projet sur le thème « Les 80 ans du Transport Aérien Militaire » qui vient récompenser une des Escadrilles sur la base d’un travail collectif. <br>
     <br>   <br>
-    <br>  
+    <br><br><br>  
     <br></p>
  <div id="lightbox" onclick="this.style.display='none'">
-    <img id="lightbox-img" src="">
+    <img id="lightbox-img" src="images/eaj2.jpg">
 </div>
     
     </main>
@@ -32,21 +30,15 @@
         <Footer>
       <a href="index.html" class="footer-btn">Retour à l'accueil</a>
           <img src="images/ba116.png" alt="Décor gauche" class="img-gauche">
-        <p style="color: #190303;position: relative;bottom: 150%;font-size: 0.7rem;"> <strong>EAJ BA 116</strong> - 2025</p>
+          <p><br></p>
+        <p style="color: #030f19;position: relative;bottom: 120%;font-size: 0.7rem;"> <strong>EAJ BA 116</strong> - 2025</p>
         
         <img src="images/eaj.png" alt="Décor droite" class="img-droite">
       </footer>
     
 </body>
 <script>
-    function openLightbox(src) {
-      const lightbox = document.getElementById('lightbox');
-      const img = document.getElementById('lightbox-img');
-      img.src = src;
-       img.style.filter = "saturate(59%) brightness(100%)";
-      lightbox.style.display = 'flex';
-    }
-
+    
     // Animation fade-in
     window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("fade-in");
